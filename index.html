@@ -9,20 +9,34 @@
 </head>
 <body>
   <div class="container">
-    <h1>This site will suggest the best programming language for you based on your answers!</h1>
+    <h1>Programming Language Suggester!</h1>
+
+    <p>This site will suggest the best programming language based on your answers!</p>
+
     <form id="programs">
       <div class="form-group">
-        <label for="yourName">What is your name?</label>
-        <input id="yourName" class="form-control" class="text">
+        <label for="name">What is your name?</label>
+        <input id="name" class="form-control" class="text">
       </div>
       <div class="form-group">
         <label for="season">What is your favorite season?</label>
         <input id="season" class="form-control" class="text">
       </div>
       <div class="form-group">
-        <label for ="astrologySign">What is your astrology sign?</label>
+        <label for="astrologySign">What is your astrology sign?</label>
         <input id="astrologySign" class="form-control" class="text">
       </div>
+      <div class="form-group">
+        <label for="randomNumber">Pick a random number from 1-100.</label>
+        <input id="randomNumber" class="form-control" class="text">
+      </div>
+      <div class="form-group">
+        <select id="hand">
+          <option value="right">Right handed</option>
+          <option value="left">Left handed</option>
+        </select>
+      </div>
+      
       <button type="submit" class="btn">Show me the money!</button>
     </form>
 
