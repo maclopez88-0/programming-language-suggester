@@ -23,6 +23,5 @@ Programming Language Selector is a site that will suggest a coding languing base
 * MIT
 
 ## Contact Information ##
-You can contact me at: Lopez.cesar.aug@gmail.com
-
-
+Cesar Augusto Lopez <lopez.cesar.aug@gmail.com>
+Github page: https://github.com/maclopez88-0
