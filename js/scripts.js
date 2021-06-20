@@ -5,18 +5,20 @@ $(document).ready(function() {
     const season = $("#season").val();
     const avatar = $("#avatar").val();
     const hand = $("#hand").val();
+    let result;
 
     if ((hand === "Left handed" && season === "Spring") || (hand === "Left handed" && season === "Summer")) {
-      alert("You may want to take up Python");
+      result = ("You may want to take up Python");
     }
     else if (hand === "Right handed" && season === "Spring" || hand === "Right handed" && season === "Summer") {
-      alert("You may want to look into C#");
+      result = ("You may want to look into C#");
     }
     else if (season === "Fall" || "Winter") {
-      alert("According to our calculations, Ruby is right for you!");
+      result = ("According to our calculations, Ruby is right for you!");
     }
     else {
-      alert("Please contact the admin.");
+      result = ("Please contact the admin.");
     }
-  })
+    $("#output").text(result);
+  });
 });
