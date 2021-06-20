@@ -16,17 +16,17 @@ $(document).ready(function() {
     //   alert(", according to our calculations, Ruby is right for you!");
     // }
 
-    if (season === "Spring" && hand === "Left handed") {
-      alert("You may want to take up Python!");
+    if (hand === "Left handed" && season === "Spring" || "Summer") {
+      alert("You may want to take up Python");
     }
-    else if (season === "Summer") {
+    else if (hand === "Right handed" && season === "Spring" || "Summer") {
       alert("You may want to look into C#");
     }
-    else if (season === "Fall" || "Winter" && hand === "Left handed") {
-      alert(", according to our calculations, Ruby is right for you!");
+    else if (season === "Fall" || "Winter") {
+      alert("According to our calculations, Ruby is right for you!");
     }
     else {
-      alert("Please contact the Admin.");
+      alert("Please contact the admin.");
     }
   })
 });
