@@ -4,7 +4,7 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts_2.js"></script>
   <title>Programming Language Suggester site!</title>
 </head>
 <body>
@@ -12,24 +12,30 @@
     <h1>Programming Language Suggester!</h1>
 
     <p>This site will suggest the best programming language based on your answers!</p>
-
+    
     <form id="programs">
       <div class="form-group">
         <label for="name">What is your name?</label>
         <input id="name" class="form-control" class="text">
       </div>
       <div class="form-group">
-        <label for="season">What is your favorite season?</label>
-        <input id="season" class="form-control" class="text">
-      </div>
-      <div class="form-group">
-        <label for="astrologySign">What is your astrology sign?</label>
-        <input id="astrologySign" class="form-control" class="text">
-      </div>
-      <div class="form-group">
-        <label for="randomNumber">Pick a random number from 1-100.</label>
+        <label for="randomNumber">Pick a random number from 1-10.</label>
         <input id="randomNumber" class="form-control" class="text">
       </div>
+      <p>What is your favorite season?</p>
+      <select class="form-control" id="season">
+        <option>Fall</option>
+        <option>Summer</option>
+        <option>Winter</option>
+        <option>Spring</option>
+      </select>
+      <p>If you were in Avatar: The last airbender, which nation would you choose?</p>
+      <select class="form-control" id="avatar">
+        <option>Fire Nation</option>
+        <option>Water Tribe</option>
+        <option>Earth Kingdom</option>
+        <option>Air Nomads</option>
+      </select>
       <div class="form-group">
         <p>Are you left handed or right handed?</p>
         <select id="hand">
@@ -37,6 +43,7 @@
           <option value="left">Left handed</option>
         </select>
       </div>
+      
       <!-- <p>Are you left handed or right handed?</p>
       <div class="radio">
         <label>
@@ -50,6 +57,8 @@
           Left handed
         </label>
       </div> -->
+
+      
       
       <button type="submit" class="btn">Show me the money!</button>
     </form>
