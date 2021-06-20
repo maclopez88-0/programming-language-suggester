@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("form#programs").submit(function(event) {
     event.preventDefault();
-    const name = $("input#name").val();
+    const name = $("#nameInput").val();
     const season = $("#season").val();
     const avatar = $("#avatar").val();
     const hand = $("#hand").val();
