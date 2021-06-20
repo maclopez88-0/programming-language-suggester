@@ -6,20 +6,10 @@ $(document).ready(function() {
     const avatar = $("#avatar").val();
     const hand = $("#hand").val();
 
-    // if (season === "Fall" || "Summer" || "Winter" && avatar === "Air Nomads" || "Water Tribe" || "Fire Nation" || "Earth Kingdom" && hand === "Left handed") {
-    //   alert("You may want to take up Python!");
-    // }
-    // else if (season === "Fall" || "Summer" || "Winter" && avatar === "Air Nomads" || "Water Tribe" || "Fire Nation" || "Earth Kingdom" && hand === "Right handed") {
-    //   alert("You may want to look into C#");
-    // }
-    // else (season === "spring" && hand === "Right handed" || "Left handed"); {
-    //   alert(", according to our calculations, Ruby is right for you!");
-    // }
-
-    if (hand === "Left handed" && season === "Spring" || "Summer") {
+    if ((hand === "Left handed" && season === "Spring") || (hand === "Left handed" && season === "Summer")) {
       alert("You may want to take up Python");
     }
-    else if (hand === "Right handed" && season === "Spring" || "Summer") {
+    else if (hand === "Right handed" && season === "Spring" || hand === "Right handed" && season === "Summer") {
       alert("You may want to look into C#");
     }
     else if (season === "Fall" || "Winter") {
